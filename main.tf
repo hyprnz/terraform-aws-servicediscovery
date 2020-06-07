@@ -20,7 +20,7 @@ resource "aws_service_discovery_service" "this" {
     }
   }
 
-  health_check_config {
+  health_check_custom_config {
     failure_threshold = var.service_failure_threshold
   }
 }
